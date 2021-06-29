@@ -27,6 +27,13 @@ export const dataReducer = (state = initialState, action) => {
         ...state,
         isLogin: action.payload,
       };
+    case 'LOG_OUT':
+      return {
+        ...state,
+        ListData: [],
+        DataLogin: [],
+        isLogin: false,
+      };
 
     default:
       return state;

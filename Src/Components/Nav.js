@@ -14,7 +14,6 @@ const Nav = () => {
       <Stack.Screen
         component={Login}
         name="Login"
-        
         options={{headerShown: false}}
       />
       <Stack.Screen

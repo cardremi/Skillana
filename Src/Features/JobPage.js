@@ -11,8 +11,6 @@ import {id} from 'date-fns/locale';
 function JobPage(props) {
   const {navigation, route} = props;
   const goTo = ({item,rs}) => {
-    
-    
     navigation.navigate('JobDetail', {
       posisi: item.name,
       perusahaan: item.company.name,

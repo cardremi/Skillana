@@ -35,5 +35,10 @@ export const setLogin = payload => {
     payload,
   };
 };
+export const logOut = () => {
+  return {
+    type: 'LOG_OUT',
+  };
+};
 
 

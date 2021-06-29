@@ -2,7 +2,7 @@ import React from 'react';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Home from '../Features/Home';
 import JobPage from '../Features/JobPage';
-import Modal from '../Components/Modal';
+import ModalLog from '../Components/ModalLog';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -33,13 +33,14 @@ export default function BottomNav() {
         }}
       />
       <Tab.Screen
-        name="Modal"
-        component={Modal}
+        name="ModalLog"
+        component={ModalLog}
         options={{
           tabBarLabel: 'Logout',
           tabBarIcon: ({color}) => (
             <MaterialIcons name="logout" color={color} size={ms(20)} />
           ),
+          
         }}
       />
     </Tab.Navigator>
